@@ -1,14 +1,14 @@
-# CHAYA-62M
+# Chaya-v1
 
 **Context-Aware Hybrid Autoregressive Transformer Architecture**
 
-A 62-million parameter transformer language model built entirely from scratch, implementing modern architectural components including Rotary Positional Embeddings (RoPE), Root Mean Square Normalization (RMSNorm), and SwiGLU activation functions. CHAYA-62M is designed for efficient inference on consumer hardware while maintaining competitive performance for its parameter class.
+A `62-million` parameter transformer language model built entirely from scratch, implementing modern architectural components including Rotary Positional Embeddings (RoPE), Root Mean Square Normalization (RMSNorm), and SwiGLU activation functions. Chaya-v1 is designed for efficient inference on consumer hardware while maintaining competitive performance for its parameter class.
 
 ---
 
 ## Overview
 
-CHAYA-62M represents a foundational language model trained through a two-phase curriculum: initial pre-training on WikiText-103 followed by continued training on SWIFT-700, a curated 700-million-token dataset spanning multiple domains. The model architecture prioritizes inference efficiency and context awareness, making it suitable for deployment on resource-constrained environments.
+Chaya-v1 represents a foundational language model trained through a two-phase curriculum: initial pre-training on WikiText-103 followed by continued training on SWIFT-700, a curated 700-million-token dataset spanning multiple domains. The model architecture prioritizes inference efficiency and context awareness, making it suitable for deployment on resource-constrained environments.
 
 **Key Characteristics:**
 - 62.3 million trainable parameters
@@ -21,7 +21,7 @@ CHAYA-62M represents a foundational language model trained through a two-phase c
 
 ## Architecture
 
-CHAYA-62M implements a decoder-only transformer architecture with the following specifications:
+Chaya-v1 implements a decoder-only transformer architecture with the following specifications:
 
 ### Model Configuration
 
@@ -112,7 +112,7 @@ Mixed Precision: FP16 with gradient scaling
 ## Repository Structure
 
 ```
-CHAYA-62M/
+Chaya-v1/
 ├── gpt2_tokenizer/              # GPT-2 tokenizer files
 ├── CHAYA_62M_Phase1_Final.pt    # Phase 1 checkpoint
 ├── CHAYA_62M_Phase2_Final.pt    # Final trained model
@@ -137,8 +137,8 @@ CHAYA-62M/
 
 ```bash
 # Clone repository
-git clone https://github.com/Pranoy71/CHAYA-62M.git
-cd CHAYA-62M
+git clone https://github.com/Pranoy71/Chaya-v1.git
+cd Chaya-v1
 
 # Install dependencies
 pip install -r requirements.txt
@@ -213,7 +213,7 @@ with torch.no_grad():
 
 **Validation Metrics (Phase 2):**
 - Perplexity: 37.89
-- Token Accuracy: 39.78%
+- Token Accuracy: 39.78% (Domain-expanded validation set)
 
 **Observed Capabilities:**
 - Coherent text generation up to 100-150 tokens
@@ -306,21 +306,6 @@ Exploration of advanced techniques:
 - Mixture of Experts (MoE) for sparse activation
 - Multi-Head Latent Attention (MLA) for memory efficiency
 
----
-
-## Citation
-
-If you use CHAYA-62M in your research or applications, please cite:
-
-```bibtex
-@software{chaya62m2025,
-  author = {Debnath, Bishal Chandra},
-  title = {CHAYA-62M: Context-Aware Hybrid Autoregressive Transformer Architecture},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/Pranoy71/CHAYA-62M}
-}
-```
 
 ---
 
@@ -351,7 +336,7 @@ This project is released under the MIT License. See LICENSE file for details.
 
 For questions, issues, or collaboration inquiries, please open an issue on the GitHub repository.
 
-**Project Page:** https://github.com/Pranoy71/CHAYA-62M
+**Project Page:** https://github.com/Pranoy71/Chaya-v1
 **Dataset:** https://github.com/Pranoy71/Swift-700
 
 ---
