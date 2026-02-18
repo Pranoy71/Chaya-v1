@@ -226,6 +226,7 @@ with torch.no_grad():
 - Topic drift beyond 200 tokens
 - Limited reasoning capabilities (parameter constraint)
 - Occasional repetition in extended generation
+- Not fine tuned on QA tasks
 
 ---
 
